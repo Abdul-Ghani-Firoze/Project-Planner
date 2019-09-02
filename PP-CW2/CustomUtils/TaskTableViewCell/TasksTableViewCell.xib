@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XYS-tm-0VQ" customClass="TasksTableViewCell" customModule="PP_CW2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="990" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwO-qL-jMd">
+                    <rect key="frame" x="0.0" y="0.0" width="990" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%  Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o09-si-oCd">
+                            <rect key="frame" x="854" y="48" width="121" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TASK_NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTm-E7-Cat">
+                            <rect key="frame" x="15" y="8" width="114" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcV-0G-qsc">
+                            <rect key="frame" x="894" y="89" width="81" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK4-i7-fNz">
+                            <rect key="frame" x="15" y="89" width="62" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smo-x6-Hq7">
+                            <rect key="frame" x="945" y="0.0" width="30" height="30"/>
+                            <state key="normal" image="Edit"/>
+                            <connections>
+                                <action selector="editTask:" destination="XYS-tm-0VQ" eventType="touchUpInside" id="hHl-3A-mNj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buM-hT-fdu">
+                            <rect key="frame" x="838.5" y="47" width="14.5" height="26"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIME_LEFT" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHR-e0-8cW">
+                            <rect key="frame" x="789" y="89" width="100" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rU2-D4-7dn" customClass="LinearProgressBar" customModule="PP_CW2">
+                            <rect key="frame" x="15" y="43" width="796" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="barPadding">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="trackPadding">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="barThickness">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zTm-E7-Cat" firstAttribute="top" secondItem="NwO-qL-jMd" secondAttribute="top" constant="8" id="07L-aB-hSI"/>
+                        <constraint firstItem="o09-si-oCd" firstAttribute="centerY" secondItem="NwO-qL-jMd" secondAttribute="centerY" id="6r4-3w-FOX"/>
+                        <constraint firstItem="YcV-0G-qsc" firstAttribute="leading" secondItem="uHR-e0-8cW" secondAttribute="trailing" constant="5" id="Dmb-eV-PVg"/>
+                        <constraint firstItem="o09-si-oCd" firstAttribute="leading" secondItem="buM-hT-fdu" secondAttribute="trailing" constant="1" id="Fh3-re-b2f"/>
+                        <constraint firstItem="uK4-i7-fNz" firstAttribute="leading" secondItem="NwO-qL-jMd" secondAttribute="leading" constant="15" id="IbK-Lf-gkQ"/>
+                        <constraint firstItem="Smo-x6-Hq7" firstAttribute="top" secondItem="NwO-qL-jMd" secondAttribute="top" id="LEf-4S-vVc"/>
+                        <constraint firstItem="buM-hT-fdu" firstAttribute="centerY" secondItem="NwO-qL-jMd" secondAttribute="centerY" id="NYx-0Y-tU3"/>
+                        <constraint firstItem="zTm-E7-Cat" firstAttribute="leading" secondItem="NwO-qL-jMd" secondAttribute="leading" constant="15" id="PIP-DU-yGh"/>
+                        <constraint firstAttribute="bottom" secondItem="YcV-0G-qsc" secondAttribute="bottom" constant="8" id="Qd7-5g-ctn"/>
+                        <constraint firstAttribute="trailing" secondItem="Smo-x6-Hq7" secondAttribute="trailing" constant="15" id="cak-NQ-ZHZ"/>
+                        <constraint firstAttribute="bottom" secondItem="uHR-e0-8cW" secondAttribute="bottom" constant="8" id="fll-Wo-UcE"/>
+                        <constraint firstAttribute="trailing" secondItem="o09-si-oCd" secondAttribute="trailing" constant="15" id="gQi-6K-z07"/>
+                        <constraint firstAttribute="trailing" secondItem="YcV-0G-qsc" secondAttribute="trailing" constant="15" id="kja-L4-s5Z"/>
+                        <constraint firstAttribute="bottom" secondItem="uK4-i7-fNz" secondAttribute="bottom" constant="8" id="pAt-6r-yVy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NwO-qL-jMd" secondAttribute="bottom" id="0e1-Fj-szn"/>
+                <constraint firstItem="NwO-qL-jMd" firstAttribute="trailing" secondItem="LeO-db-f7E" secondAttribute="trailing" id="ZRj-Ch-srw"/>
+                <constraint firstItem="NwO-qL-jMd" firstAttribute="leading" secondItem="LeO-db-f7E" secondAttribute="leading" id="ZU0-04-WfU"/>
+                <constraint firstItem="NwO-qL-jMd" firstAttribute="top" secondItem="XYS-tm-0VQ" secondAttribute="top" id="pFV-mS-9SM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LeO-db-f7E"/>
+            <connections>
+                <outlet property="btnEdit" destination="Smo-x6-Hq7" id="fDc-b9-iL5"/>
+                <outlet property="notes" destination="uK4-i7-fNz" id="fa0-LR-FuY"/>
+                <outlet property="percentage" destination="buM-hT-fdu" id="QYF-ta-AvD"/>
+                <outlet property="progressBar" destination="rU2-D4-7dn" id="ShR-33-dfu"/>
+                <outlet property="taskName" destination="zTm-E7-Cat" id="bgm-2P-soS"/>
+                <outlet property="timeLeft" destination="uHR-e0-8cW" id="UeB-vV-8vG"/>
+            </connections>
+            <point key="canvasLocation" x="2294" y="-613"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Edit" width="30" height="30"/>
+    </resources>
+</document>
